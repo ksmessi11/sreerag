@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sreerag N K — Game Developer Portfolio</title>
+  <meta name="description"
+    content="Game Developer passionate about building fun, immersive, and interactive digital experiences. Portfolio showcasing Unity, Unreal Engine, C++, and Python projects." />
+  <meta name="keywords" content="game developer, Unity, Unreal Engine, C++, Python, portfolio, Sreerag N K" />
+  <meta property="og:title" content="Sreerag N K — Game Developer" />
+  <meta property="og:description" content="Building fun, immersive, and interactive digital experiences." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-text" data-text="SREERAG N K">SREERAG N K</div>
+      <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
+      </div>
+      <div class="loader-subtitle">LOADING EXPERIENCE...</div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <canvas id="cursor-trail" class="cursor-trail"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo" data-magnetic>
+      <span class="logo-bracket">[</span>
+      <span class="logo-text">SNK</span>
+      <span class="logo-bracket">]</span>
+    </a>
+    <div class="nav-links">
+      <a href="#home" class="nav-link active" data-magnetic>
+        <span class="nav-link-number">01</span>
+        <span class="nav-link-text">Home</span>
+      </a>
+      <a href="#about" class="nav-link" data-magnetic>
+        <span class="nav-link-number">02</span>
+        <span class="nav-link-text">About</span>
+      </a>
+      <a href="#projects" class="nav-link" data-magnetic>
+        <span class="nav-link-number">03</span>
+        <span class="nav-link-text">Projects</span>
+      </a>
+      <a href="#play" class="nav-link" data-magnetic>
+        <span class="nav-link-number">04</span>
+        <span class="nav-link-text">Play</span>
+      </a>
+      <a href="#contact" class="nav-link" data-magnetic>
+        <span class="nav-link-number">05</span>
+        <span class="nav-link-text">Contact</span>
+      </a>
+    </div>
+    <button class="nav-menu-btn" id="menu-btn" data-magnetic>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-links">
+      <a href="#home" class="mobile-link" data-magnetic>
+        <span class="mobile-link-number">01/</span>
+        <span class="mobile-link-text">Home</span>
+      </a>
+      <a href="#about" class="mobile-link" data-magnetic>
+        <span class="mobile-link-number">02/</span>
+        <span class="mobile-link-text">About</span>
+      </a>
+      <a href="#projects" class="mobile-link" data-magnetic>
+        <span class="mobile-link-number">03/</span>
+        <span class="mobile-link-text">Projects</span>
+      </a>
+      <a href="#play" class="mobile-link" data-magnetic>
+        <span class="mobile-link-number">04/</span>
+        <span class="mobile-link-text">Play</span>
+      </a>
+      <a href="#contact" class="mobile-link" data-magnetic>
+        <span class="mobile-link-number">05/</span>
+        <span class="mobile-link-text">Contact</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="app">
+    <!-- HOME SECTION -->
+    <section class="section section-home" id="home">
+      <!-- 3D Background -->
+      <div id="hero-3d-scene" class="hero-3d-scene"></div>
+      <div class="hero-bg">
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="shape shape-4"></div>
+          <div class="shape shape-5"></div>
+          <div class="grid-lines"></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="hero-tag-line"></span>
+          <span class="hero-tag-text" data-scramble>&lt; GAME DEVELOPER /&gt;</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-title-line">
+            <span class="hero-title-word" data-scramble>SREERAG</span>
+          </span>
+          <span class="hero-title-line">
+            <span class="hero-title-word outline" data-scramble>N K</span>
+          </span>
+        </h1>
+        <p class="hero-description reveal-text">
+          Building fun, immersive, and interactive digital experiences through creative design and efficient code.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" data-magnetic>
+            <span class="btn-text">View My Work</span>
+            <span class="btn-icon">→</span>
+          </a>
+          <a href="#contact" class="btn btn-outline" data-magnetic>
+            <span class="btn-text">Get In Touch</span>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-count="3">0</span>
+            <span class="hero-stat-label">Projects Built</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-count="6">0</span>
+            <span class="hero-stat-label">Core Skills</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-count="2">0</span>
+            <span class="hero-stat-label">Game Engines</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-indicator-line"></div>
+        <span class="scroll-indicator-text">SCROLL DOWN</span>
+      </div>
+    </section>
+
+    <!-- DIVIDER: Marquee Game Text -->
+    <div class="section-divider divider-marquee">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>GAME DEVELOPER</span>
+          <span class="marquee-dot">◆</span>
+          <span>UNITY</span>
+          <span class="marquee-dot">◆</span>
+          <span>UNREAL ENGINE</span>
+          <span class="marquee-dot">◆</span>
+          <span>C++</span>
+          <span class="marquee-dot">◆</span>
+          <span>PYTHON</span>
+          <span class="marquee-dot">◆</span>
+          <span>LEVEL DESIGN</span>
+          <span class="marquee-dot">◆</span>
+          <span>GAME AI</span>
+          <span class="marquee-dot">◆</span>
+          <span>PHYSICS</span>
+          <span class="marquee-dot">◆</span>
+          <span>GAME DEVELOPER</span>
+          <span class="marquee-dot">◆</span>
+          <span>UNITY</span>
+          <span class="marquee-dot">◆</span>
+          <span>UNREAL ENGINE</span>
+          <span class="marquee-dot">◆</span>
+          <span>C++</span>
+          <span class="marquee-dot">◆</span>
+          <span>PYTHON</span>
+          <span class="marquee-dot">◆</span>
+          <span>LEVEL DESIGN</span>
+          <span class="marquee-dot">◆</span>
+          <span>GAME AI</span>
+          <span class="marquee-dot">◆</span>
+          <span>PHYSICS</span>
+          <span class="marquee-dot">◆</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section class="section section-about" id="about">
+      <div class="section-header">
+        <span class="section-number">02/</span>
+        <h2 class="section-title" data-scramble>ABOUT ME</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-bio">
+          <p class="about-text reveal-text">
+            I'm a Game Developer passionate about building fun, immersive, and interactive digital experiences.
+          </p>
+          <p class="about-text reveal-text">
+            I enjoy turning ideas into playable games using creative design and efficient code. Constantly exploring new
+            technologies, I aim to create games that are both engaging and memorable.
+          </p>
+          <div class="about-location reveal-up">
+            <span class="location-icon">📍</span>
+            <span>Kerala, India</span>
+          </div>
+          <!-- Game philosophy cards -->
+          <div class="philosophy-cards">
+            <div class="philosophy-card reveal-up" data-delay="0">
+              <div class="philosophy-icon">🎯</div>
+              <h4>Player-First Design</h4>
+              <p>Every mechanic serves the player's experience and enjoyment.</p>
+            </div>
+            <div class="philosophy-card reveal-up" data-delay="0.15">
+              <div class="philosophy-icon">🔄</div>
+              <h4>Iterative Development</h4>
+              <p>Prototype, test, refine — building through constant iteration.</p>
+            </div>
+            <div class="philosophy-card reveal-up" data-delay="0.3">
+              <div class="philosophy-icon">🚀</div>
+              <h4>Performance Matters</h4>
+              <p>Optimized code for smooth 60fps gameplay everywhere.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-skills">
+          <h3 class="skills-title reveal-up">Skills & Expertise</h3>
+          <div class="skills-grid">
+            <div class="skill-card reveal-up" data-delay="0">
+              <div class="skill-icon">🎮</div>
+              <h4>Game Mechanics Design</h4>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="92"></div>
+              </div>
+            </div>
+            <div class="skill-card reveal-up" data-delay="0.1">
+              <div class="skill-icon">⚡</div>
+              <h4>Gameplay Programming</h4>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-card reveal-up" data-delay="0.2">
+              <div class="skill-icon">🏗️</div>
+              <h4>Level Design</h4>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-card reveal-up" data-delay="0.3">
+              <div class="skill-icon">💥</div>
+              <h4>Physics & Collision</h4>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-card reveal-up" data-delay="0.4">
+              <div class="skill-icon">🤖</div>
+              <h4>AI for Games</h4>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="82"></div>
+              </div>
+            </div>
+            <div class="skill-card reveal-up" data-delay="0.5">
+              <div class="skill-icon">🔧</div>
+              <h4>Debug & Optimization</h4>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="87"></div>
+              </div>
+            </div>
+          </div>
+          <h3 class="skills-title reveal-up" style="margin-top: 3rem;">Tech Stack</h3>
+          <div class="tech-stack">
+            <div class="tech-item reveal-up" data-delay="0">
+              <span class="tech-name">C</span>
+            </div>
+            <div class="tech-item reveal-up" data-delay="0.05">
+              <span class="tech-name">C++</span>
+            </div>
+            <div class="tech-item reveal-up" data-delay="0.1">
+              <span class="tech-name">Python</span>
+            </div>
+            <div class="tech-item reveal-up" data-delay="0.15">
+              <span class="tech-name">C#</span>
+            </div>
+            <div class="tech-item reveal-up" data-delay="0.2">
+              <span class="tech-name">Unity</span>
+            </div>
+            <div class="tech-item reveal-up" data-delay="0.25">
+              <span class="tech-name">Unreal Engine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER: 3D Swords Scene -->
+    <div class="section-divider divider-3d">
+      <div id="divider-swords" class="divider-canvas"></div>
+      <div class="divider-text">
+        <span class="divider-label" data-scramble>// CRAFTING DIGITAL WORLDS</span>
+      </div>
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section section-projects" id="projects">
+      <div class="section-header">
+        <span class="section-number">03/</span>
+        <h2 class="section-title" data-scramble>MY PROJECTS</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal-up" data-delay="0" data-tilt>
+          <div class="project-image">
+            <img src="/images/space-shooter.png" alt="Space Shooter Game" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-view">View Project →</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-number">01/</span>
+            <h3 class="project-title">Space Shooter</h3>
+            <p class="project-desc">A fast-paced 2D arcade space shooter where players control a spaceship and destroy
+              waves of enemy ships and asteroids while collecting power-ups to increase firepower and survive longer.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">2D Physics</span>
+              <span class="tech-tag">Particle Effects</span>
+            </div>
+            <a href="https://github.com/yourusername/space-shooter" target="_blank" rel="noopener" class="project-link"
+              data-magnetic>
+              <span>GitHub</span>
+              <span class="link-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal-up" data-delay="0.2" data-tilt>
+          <div class="project-image">
+            <img src="/images/maze-escape.png" alt="Maze Escape Game" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-view">View Project →</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-number">02/</span>
+            <h3 class="project-title">Maze Escape</h3>
+            <p class="project-desc">A 3D puzzle adventure game where players navigate through a complex maze to find
+              keys and unlock doors while avoiding traps and solving small puzzles to escape.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">3D Lighting</span>
+              <span class="tech-tag">Basic AI</span>
+            </div>
+            <a href="https://github.com/yourusername/maze-escape" target="_blank" rel="noopener" class="project-link"
+              data-magnetic>
+              <span>GitHub</span>
+              <span class="link-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal-up" data-delay="0.4" data-tilt>
+          <div class="project-image">
+            <img src="/images/speed-racer.png" alt="Speed Racer Game" loading="lazy" />
+            <div class="project-overlay">
+              <span class="project-view">View Project →</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-number">03/</span>
+            <h3 class="project-title">Speed Racer</h3>
+            <p class="project-desc">A 3D racing game where players compete against AI opponents on different tracks,
+              using speed boosts and drifting mechanics to win races.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">Vehicle Physics</span>
+              <span class="tech-tag">AI Opponents</span>
+            </div>
+            <a href="https://github.com/yourusername/speed-racer" target="_blank" rel="noopener" class="project-link"
+              data-magnetic>
+              <span>GitHub</span>
+              <span class="link-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER: 3D Portal Scene + Game Quote -->
+    <div class="section-divider divider-3d divider-portal-wrapper">
+      <div id="divider-portal" class="divider-canvas"></div>
+      <div class="divider-text">
+        <span class="divider-quote reveal-text">"The game is a series of meaningful choices."</span>
+        <span class="divider-quote-author reveal-up">— Sid Meier</span>
+      </div>
+    </div>
+
+    <!-- PLAY SECTION (TIC-TAC-TOE) -->
+    <section class="section section-play" id="play">
+      <!-- 3D container for victory/defeat particle explosions -->
+      <div id="game-3d-scene" class="game-3d-bg"></div>
+
+      <div class="section-header">
+        <span class="section-number">04/</span>
+        <h2 class="section-title" data-scramble>MINI GAME</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="game-container">
+        <div class="game-header reveal-up">
+          <h3 class="game-title">TIC-TAC-TOE VS AI</h3>
+          <div class="game-status" id="game-status">PLAYER (X) TURN</div>
+        </div>
+
+        <div class="game-board reveal-up" data-delay="0.1">
+          <div class="cell" data-index="0"></div>
+          <div class="cell" data-index="1"></div>
+          <div class="cell" data-index="2"></div>
+          <div class="cell" data-index="3"></div>
+          <div class="cell" data-index="4"></div>
+          <div class="cell" data-index="5"></div>
+          <div class="cell" data-index="6"></div>
+          <div class="cell" data-index="7"></div>
+          <div class="cell" data-index="8"></div>
+        </div>
+
+        <div class="game-footer reveal-up" data-delay="0.2">
+          <button id="reset-game" class="btn btn-outline" data-magnetic>
+            <span class="btn-text">Reset Game</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section section-contact" id="contact">
+      <!-- 3D gems floating behind contact -->
+      <div id="contact-3d-scene" class="contact-3d-bg"></div>
+      <div class="section-header">
+        <span class="section-number">05/</span>
+        <h2 class="section-title" data-scramble>GET IN TOUCH</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p class="contact-text reveal-text">
+            Got a project in mind or just want to say hi? I'd love to hear from you. Let's build something awesome
+            together.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:sreerag.dev@gmail.com" class="contact-link-item reveal-up" data-delay="0" data-magnetic>
+              <span class="contact-link-icon">✉</span>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">sreerag.dev@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/sreerag-dev" target="_blank" rel="noopener"
+              class="contact-link-item reveal-up" data-delay="0.1" data-magnetic>
+              <span class="contact-link-icon">in</span>
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">sreerag-dev</span>
+            </a>
+            <a href="https://github.com/sreeragdev" target="_blank" rel="noopener" class="contact-link-item reveal-up"
+              data-delay="0.2" data-magnetic>
+              <span class="contact-link-icon">⌘</span>
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-value">sreeragdev</span>
+            </a>
+            <a href="https://twitter.com/sreeragdev" target="_blank" rel="noopener" class="contact-link-item reveal-up"
+              data-delay="0.3" data-magnetic>
+              <span class="contact-link-icon">𝕏</span>
+              <span class="contact-link-label">Twitter / X</span>
+              <span class="contact-link-value">@sreeragdev</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group reveal-up" data-delay="0">
+              <label for="name">YOUR NAME</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="John Doe" />
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group reveal-up" data-delay="0.1">
+              <label for="email">YOUR EMAIL</label>
+              <input type="email" id="email" name="email" required autocomplete="email"
+                placeholder="john@example.com" />
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group reveal-up" data-delay="0.2">
+              <label for="message">YOUR MESSAGE</label>
+              <textarea id="message" name="message" rows="4" required
+                placeholder="Tell me about your project..."></textarea>
+              <div class="form-line"></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit reveal-up" data-delay="0.3" data-magnetic>
+              <span class="btn-text">Send Message</span>
+              <span class="btn-icon">→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <span class="footer-logo">[SNK]</span>
+          <span class="footer-copy">© 2026 Sreerag N K. All rights reserved.</span>
+        </div>
+        <div class="footer-right">
+          <a href="https://github.com/sreeragdev" target="_blank" rel="noopener" data-magnetic>GitHub</a>
+          <a href="https://www.linkedin.com/in/sreerag-dev" target="_blank" rel="noopener" data-magnetic>LinkedIn</a>
+          <a href="https://twitter.com/sreeragdev" target="_blank" rel="noopener" data-magnetic>Twitter</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
